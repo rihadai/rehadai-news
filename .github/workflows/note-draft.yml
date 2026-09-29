@@ -1,0 +1,41 @@
+name: note下書き作成
+
+on:
+  schedule:
+    - cron: "0 9 * * 5"   # 毎週金曜 18:00（日本時間）
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 号数を決める（これまでの下書きの数＋1）
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create "note下書き" --color 1f7a6d --force
+          n=$(gh issue list --label "note下書き" --state all --limit 500 --json number --jq 'length')
+          echo "VOL=$((n + 2))" >> $GITHUB_ENV   # 手動で書いたvol.1の次から
+
+      - name: 下書きを作る
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SITE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: python scripts/weekly_note.py
+
+      - name: Issueとして届ける
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -s draft.md ]; then
+            gh issue create --title "$(cat draft_title.txt)" --body-file draft.md --label "note下書き"
+          fi
