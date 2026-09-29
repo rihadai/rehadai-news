@@ -1,0 +1,55 @@
+name: ニュース更新
+
+on:
+  schedule:
+    # GitHubの時刻はUTC。日本時間 5:00 / 12:00 / 17:00
+    - cron: "0 20 * * *"
+    - cron: "0 3 * * *"
+    - cron: "0 8 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: news-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 記事を収集・要約
+        if: github.event_name != 'push'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/collect.py
+
+      - name: 記事データを保存
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/articles.json data/note.json
+          git diff --cached --quiet || git commit -m "記事更新 $(TZ=Asia/Tokyo date '+%Y-%m-%d %H:%M')"
+          git push
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deploy
+        uses: actions/deploy-pages@v4
