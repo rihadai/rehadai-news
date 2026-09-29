@@ -586,6 +586,6 @@ fetch("data/note.json",{cache:"no-store"}).then(r=>r.ok?r.json():[]).then(list=>
   $("noteList").innerHTML = list.slice(0,3).map(n=>`<li><a href="${esc(n.url)}" target="_blank" rel="noopener">${esc(n.title)}<time>${esc(n.date)}</time></a></li>`).join("");
   $("noteBox").hidden = false;
 }).catch(()=>{});
-</script>
+</script><script src="rehadai-app-link.js" defer></script>
 </body>
 </html>
