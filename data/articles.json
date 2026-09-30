@@ -1,5 +1,21 @@
 [
  {
+  "id": 18,
+  "cat": "研究・エビデンス",
+  "src": "PubMed",
+  "date": "2026-09-30",
+  "views": 0,
+  "title": "脳卒中の上肢に反復経頭蓋磁気刺激と鏡療法を併用、RCT7件のメタ解析",
+  "body": "脳卒中後の上肢機能に対し、反復経頭蓋磁気刺激（rTMS）と鏡療法を組み合わせた効果を調べたシステマティックレビュー。無作為化比較試験7件（計402人）を統合し、FMA-UEとBBTで有意な改善が示された。ただし著者らは予備的な結果として慎重な解釈を求めており、最適な刺激条件も明らかになっていない。",
+  "points": [
+   "対象はRCT7件、参加者は計402人",
+   "FMA-UEはSMD 0.92、BBTはSMD 1.09で改善",
+   "最適な治療条件は不明で、質の高い研究が今後必要"
+  ],
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42809058/",
+  "credit": "出典：PubMed（https://pubmed.ncbi.nlm.nih.gov/42809058/）掲載の論文情報をもとに作成"
+ },
+ {
   "id": 16,
   "cat": "制度・診療報酬",
   "src": "厚生労働省",
@@ -206,6 +222,22 @@
   ],
   "url": "https://www.mhlw.go.jp/seisakunitsuite/soshiki/toukei/fukushikaigochousa_kaigo.html",
   "credit": "出典：厚生労働省ホームページ（https://www.mhlw.go.jp/seisakunitsuite/soshiki/toukei/fukushikaigochousa_kaigo.html）を加工して作成"
+ },
+ {
+  "id": 17,
+  "cat": "制度・診療報酬",
+  "src": "厚生労働省",
+  "date": "2026-09-18",
+  "views": 0,
+  "title": "第73回精神保健福祉普及運動、9月28日から10月4日に実施",
+  "body": "厚生労働省は令和8年9月18日、第73回精神保健福祉普及運動を同月28日から10月4日まで行うと発表した。精神保健や精神障害者の福祉への理解を深め、早期治療や社会復帰、社会参加の促進を図る趣旨。主催は厚労省と都道府県、市区町村で、10月2日には富山市で全国大会が開かれる。",
+  "points": [
+   "実施期間は令和8年9月28日から10月4日まで",
+   "主催は厚労省、都道府県、市区町村",
+   "10月2日に富山県富山市で全国大会を開催"
+  ],
+  "url": "https://www.mhlw.go.jp/stf/newpage_76233.html",
+  "credit": "出典：厚生労働省ホームページ（https://www.mhlw.go.jp/stf/newpage_76233.html）を加工して作成"
  },
  {
   "id": 14,
