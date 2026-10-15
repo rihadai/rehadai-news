@@ -32,6 +32,22 @@
   "credit": "出典：PubMed（https://pubmed.ncbi.nlm.nih.gov/42870113/）掲載の論文情報をもとに作成"
  },
  {
+  "id": 55,
+  "cat": "制度・診療報酬",
+  "src": "厚生労働省",
+  "date": "2026-10-14",
+  "views": 0,
+  "title": "介護施設整備の交付金、令和8年度第一次協議の内示実績を掲載",
+  "body": "厚生労働省は、地域介護・福祉空間整備等施設整備交付金の内示実績を示すページを公開している。令和7年度は第一次協議分が7月1日付、第二次協議分が令和8年3月6日付で掲載され、令和8年度は第一次協議分が6月26日付で載っている。各回の内容はPDF資料にまとめられている。",
+  "points": [
+   "令和8年度は第一次協議の内示実績を6月26日付で掲載",
+   "令和7年度は第一次(7/1)と第二次(令和8/3/6)の2回分",
+   "内示の詳細は各回のPDF資料で確認できる形式"
+  ],
+  "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/fukushi/shisetsu_seibi_00005.html",
+  "credit": "出典：厚生労働省ホームページ（https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/fukushi/shisetsu_seibi_00005.html）を加工して作成"
+ },
+ {
   "id": 52,
   "cat": "働き方",
   "src": "厚生労働省",
