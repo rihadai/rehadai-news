@@ -32,6 +32,22 @@
   "credit": "出典：厚生労働省ホームページ（https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000080850_00019.html）を加工して作成"
  },
  {
+  "id": 88,
+  "cat": "働き方",
+  "src": "厚生労働省",
+  "date": "2026-10-21",
+  "views": 0,
+  "title": "厚労省、令和8年賃金引上げ等の実態に関する調査の概況を公表",
+  "body": "厚生労働省が、令和8年の賃金引上げ等の実態に関する調査の概況を公表した。資料は概要のほか、賃金改定の実施状況、改定額・改定率、ベースアップ等の実施、改定事情などの項目別に分かれ、図表データも掲載されている。調査対象や具体的な数値は、今回の材料からは確認できない。",
+  "points": [
+   "令和8年の賃金引上げ等に関する調査の概況が公表",
+   "賃金改定の状況やベースアップ等の項目別資料がある",
+   "図表データや概要資料もPDFで公開されている"
+  ],
+  "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/jittai/26/index.html",
+  "credit": "出典：厚生労働省ホームページ（https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/jittai/26/index.html）を加工して作成"
+ },
+ {
   "id": 84,
   "cat": "制度・診療報酬",
   "src": "厚生労働省",
