@@ -1,5 +1,21 @@
 [
  {
+  "id": 90,
+  "cat": "制度・診療報酬",
+  "src": "厚生労働省",
+  "date": "2026-10-23",
+  "views": 0,
+  "title": "介護報酬改定検証・研究委員会、10月26日にWeb開催",
+  "body": "厚生労働省は、社会保障審議会介護給付費分科会の介護報酬改定検証・研究委員会（第33回）を令和8年10月26日14時から16時にWeb会議で開くと発表した。議題は、令和6年度介護報酬改定の効果検証と調査研究に関する令和8年度調査の速報値。YouTubeでライブ配信され、会場での傍聴はない。",
+  "points": [
+   "開催は令和8年10月26日（月）14〜16時",
+   "議題は令和8年度調査の結果（速報値）",
+   "YouTubeでライブ配信、会場傍聴はなし"
+  ],
+  "url": "https://www.mhlw.go.jp/stf/newpage_76755.html",
+  "credit": "出典：厚生労働省ホームページ（https://www.mhlw.go.jp/stf/newpage_76755.html）を加工して作成"
+ },
+ {
   "id": 89,
   "cat": "働き方",
   "src": "厚生労働省",
@@ -46,6 +62,22 @@
   ],
   "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000080850_00019.html",
   "credit": "出典：厚生労働省ホームページ（https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000080850_00019.html）を加工して作成"
+ },
+ {
+  "id": 91,
+  "cat": "制度・診療報酬",
+  "src": "厚生労働省",
+  "date": "2026-10-21",
+  "views": 0,
+  "title": "厚労省が後期高齢者医療事業状況報告の公表時期を掲載",
+  "body": "厚生労働省は、後期高齢者医療制度の被保険者数や医療給付の状況をまとめた「後期高齢者医療事業状況報告」のページを公開している。年報の確報は調査年度の翌年度末ごろ、月報の速報は被保険者数が約3カ月後、医療給付が約6カ月後に公表される。統計表はe-Statで閲覧できる。",
+  "points": [
+   "年報（確報）は調査年度の翌年度末頃に公表",
+   "月報の被保険者数は調査月の約3カ月後、医療給付は約6カ月後",
+   "医療給付の公表時に、公表済みの被保険者数が差し替えられる場合がある"
+  ],
+  "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/iryouhoken/database/seido/kouki_houkoku.html",
+  "credit": "出典：厚生労働省ホームページ（https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/iryouhoken/database/seido/kouki_houkoku.html）を加工して作成"
  },
  {
   "id": 88,
